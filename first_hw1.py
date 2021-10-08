@@ -6,8 +6,11 @@ weight = int(input("Укажите ваш вес в кг: "))
 height = height/100
 # Определяем индекс массы тела - imt
 imt = int(weight /(height**2))
-print(name, 'ваш индекс массы тела: ', imt)
-
+print(f'{name} ваш индекс массы тела: {imt}.')
+if imt >= 20 and imt <= 25:
+    print(f'У вас {name} отличные показатели. Так держать!')
+else:
+    print('Вам необходимо заняться своим здоровьем.')
 
 
 

@@ -1,13 +1,13 @@
 s_sec = int(input("Введите временной интервал в секундах: "))
 # Определяем количество часов
-s_hours = 60*60
-h_hours = s_sec // s_hours
+#s_hours = 60*60
+h_hours = s_sec // 3600
 # Определяем остаток секунд после определения часов
-ost_sec = s_sec % s_hours
+ost_sec = s_sec % 3600
 # Определяем сколько в оставшихся секундах минут
-sec_m = 60
-m_sec = ost_sec // sec_m
+#sec_m = 60
+m_sec = ost_sec // 60
 # Определяем остаток секунд, которые не вошли ни в часы ни в минуты
-ost_ss = ost_sec % sec_m
-print(h_hours, m_sec, ost_ss, sep=':')
+ost_ss = ost_sec % 60
+print(f'{h_hours:02}:{m_sec:02}:{ost_ss:02}')
 
