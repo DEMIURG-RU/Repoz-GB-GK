@@ -18,6 +18,3 @@ while True:
     for key, value in anltc.items():
         print(f'{key:>30}: {value}')
     print("-" * 30)
-
-
-
