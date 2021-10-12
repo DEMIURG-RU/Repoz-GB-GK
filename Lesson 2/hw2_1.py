@@ -3,3 +3,4 @@ l_ght = len(my_list)
 #print(l_ght) ghjdthrf
 for t in range(l_ght):
     print(f'{t} {type(my_list[t])}')
+
