@@ -8,3 +8,4 @@ for t in range(0, ch_el):
     else:
         b = my_rstr[t]
         print(f'{t+1} {b[0:10]}')
+
